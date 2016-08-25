@@ -1,0 +1,21 @@
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.workItem {
+	margin: 10px;
+	max-width: calc(50% - 20px);
+
+	img {
+		border: 1px solid whitesmoke;
+	}
+
+	a {
+		color: black;
+		p {
+			font-weight: normal;
+			font-size: 14px;
+		}
+	}
+}

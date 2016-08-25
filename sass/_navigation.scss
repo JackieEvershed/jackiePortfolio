@@ -1,14 +1,21 @@
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
 ul.menu {
 	margin: 0;
-	padding: 0;
+	padding: 20px;
+	
 	li {
+		list-style-type: none;
 		display: inline;
 		margin-right: 10px;
+
 		a {
-			color: #333;
 			padding: 10px;
-			background: #333;
-			color: white;
 		}
 	}
 }

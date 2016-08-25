@@ -1,6 +1,12 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<div class="footerInfo">
+	    <p>Developed by <strong>Jackie Evershed</strong> <?php echo date('Y'); ?></p>
+	    <p>Site theme by UnionAgency on ThemeForest</p>
+    </div>
+    <div class="social">
+	<?php  dynamic_sidebar( 'social-widget-area' ); ?>
+    </div>
   </div>
 </footer>
 

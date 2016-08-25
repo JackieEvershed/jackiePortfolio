@@ -13,6 +13,9 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'header';
+@import 'frontPage';
+@import 'workPage';
 /*
 ====================================
 Default Styling
@@ -20,31 +23,37 @@ Default Styling
 */
 
 img {
+	display: block;
 	max-width: 100%;
 }
 
 body {
 	color: #333;
+	font-family: 'Playfair Display', serif;
 }
 
-.container {
+.container, .pageTitle {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 15px;
 }
 
 .content {
 	float: left;
 	width: 65%;
-	margin-right: 5%;
 }
 
 .full {
 	width: 100%;
 }
 
+section {
+	margin: 100px 0;
 
-
-
+	h2:first-child {
+	margin-left: 20px;
+	}
+}
 
 
 

@@ -1,3 +1,29 @@
 footer {
 	clear: both;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.social {
+	list-style-type: none;
+	display: flex;
+
+	.socialIcon {
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		margin: 10px;
+		height: 45px;
+		width: 45px;
+		background-color: #ebebeb;
+		border-radius: 50%;
+	}
+	
+	a {
+		font-size: 14px;
+		color: black;
+		display: block;
+	}
 }

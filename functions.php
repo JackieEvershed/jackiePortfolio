@@ -180,6 +180,15 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'Social Widget Area',
+		'id' => 'social-widget-area',
+		'description' => 'The social widget area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
