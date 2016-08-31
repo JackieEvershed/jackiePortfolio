@@ -28,6 +28,11 @@
           'container' => false,
           'theme_location' => 'primary'
         )); ?>
+        <button class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
     </nav>
     <div class="pictureBorder">
       <div class="mainTitles">
@@ -48,6 +53,11 @@
           'container' => false,
           'theme_location' => 'primary'
         )); ?>
+        <button class="hamburger hamburger--spring" type="button" aria-label="Menu" aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         </div>
     </nav>
   <?php endif; ?>

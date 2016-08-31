@@ -4,12 +4,9 @@
 }
 
 .workItem {
-	margin: 10px;
-	max-width: calc(50% - 20px);
+	margin: 25px;
+	max-width: calc(50% - 50px);
 
-	img {
-		border: 1px solid whitesmoke;
-	}
 
 	a {
 		color: black;
@@ -18,4 +15,38 @@
 			font-size: 14px;
 		}
 	}
+
+	h4 {
+		font-weight: normal;
+	}
+
+	h3,h4, p {
+		margin: 10px 0;
+	}
+}
+
+.title {
+	margin-left: 25px;
+}
+
+//single page styling
+
+.singlePortfolio {
+	display: flex;
+	align-items: flex-start;
+
+	.portfolioImage {
+		width: 50%;
+	}
+
+	.portfolioContent {
+		width: 50%;
+		margin-left: 60px;
+
+		h2 {
+			font-size: 32px;
+		}
+	}
+
+
 }

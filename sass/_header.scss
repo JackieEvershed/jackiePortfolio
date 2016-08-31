@@ -8,15 +8,14 @@
 		display: block;
 	}
 		h1 {
-		top: 22%;
-		position: absolute;
+		margin: 0;
 		font-size: 5em;
 		}
 
 	h2 {
 		font-size: 32px;
-		margin-top: 80px;
-		margin-bottom: 10px;
+		margin-top: 40px;
+    	margin-bottom: 10px;
 	}
 }
 
@@ -32,7 +31,7 @@
 
 .blackFont {
 	ul.menu li a {
-	color: black;
+	color: #404040;
 	}
 }
 

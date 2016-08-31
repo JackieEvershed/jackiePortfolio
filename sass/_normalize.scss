@@ -16,3 +16,49 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
    height: 0;
    clear: both;
 }
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	color: #404040;
+	font-family: 'Playfair Display', serif;
+}
+
+.container, .pageTitle {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 45px;
+}
+
+.content {
+	float: left;
+	width: 65%;
+}
+
+.full {
+	width: 100%;
+}
+
+section {
+	margin: 100px 0;
+
+	h2 {
+		margin-left: 30px;
+	}
+}
+
+section.toolbox {
+	margin-bottom:0px;
+}
+
+.portfolioItem, .portfolioContent {
+	a {
+			display: inline-block;
+			margin: 10px 0;
+			background-color: #404040;
+			padding: 7px;
+		}
+}

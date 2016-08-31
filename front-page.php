@@ -53,7 +53,7 @@
       </div>
 
       </section>
-      <section="portfolio">
+      <section class="portfolio">
       <h2>Portfolio</h2>
 
      <?php $portfolio = new WP_Query(
@@ -63,15 +63,20 @@
         'order' => 'ASC'
       )
      ); ?>
-     <div class="portfolioDisplay clearfix">
+     <div class="portfolioDisplay">
      <?php if($portfolio->have_posts()): ?>
       <?php while ($portfolio->have_posts()): $portfolio->the_post(); ?>
-          <div class="portfolioItem <?php echo $post->post_name ?>">
-          <h3><?php the_title(); ?></h3>
+          <div class="portfolioItem <?php echo $post->post_name ?> clearfix">
           <?php while(have_rows('images')) : the_row(); ?>
             <?php $image = get_sub_field('image') ?>
             <img src="<?php echo $image['url'] ?>">
-          <p><?php the_field('short_desc') ?></p>
+            <div class="portfolioItemInfo">
+              <h3><?php the_title(); ?></h3>
+              <h4><?php the_field('project_name') ?></h4>
+              <p><?php the_field('short_desc') ?></p>
+              <p class="projectInfo"><?php the_field('project_info'); ?></p>
+              <a target="_blank" href="<?php the_field('project_url') ?>">See Live</a>
+            </div>
           <?php endwhile ?>
           </div>
       <?php endwhile; ?>

@@ -29,6 +29,7 @@
                 <?php $image = get_sub_field('image') ?>
                 <img src="<?php echo $image['url'] ?>">
                 <h3><?php the_title(); ?></h3>
+                <h4><?php the_field('project_name') ?></h4>
                 <p><?php the_field('short_desc') ?></p>
               </a>
               <?php endwhile ?>
